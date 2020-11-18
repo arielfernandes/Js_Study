@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="inputBox">
+        <h2>Random Password Generator</h2>
+        <input type="text" name="Create Password" placeholder="Create Password" id="password" readonly>
+
+		<label id="fontL">Chosse the pass length</label>
+		<select id="idSelect">
+			<option value="6">6</option>
+			<option value="8">8</option>
+			<option value="16">16</option>
+		</select>
+        <div id="button" onclick="getPassword();">
+            Generate Password
+        </div>
+    </div>
+	<script src="generator.js"></script>
+</body>
+</html>
