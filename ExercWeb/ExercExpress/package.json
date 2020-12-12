@@ -1,15 +1,20 @@
 {
-  "name": "ExercExpress",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+	"name": "ExercExpress",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon",
+		"production": "pm2 start index.js --name appx-backend"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "4.17.1",
+		"pm2": "4.5.0"
+	},
+	"devDependencies": {
+		"nodemon": "2.0.6"
+	}
 }
