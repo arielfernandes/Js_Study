@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(188, 134, 238);
+        }
+        .c-main {
+            display: flex;
+            justify-content: center;
+            
+            margin-top: 40px;
+        }
+        .c-font {
+            font-size: 40pt;
+            letter-spacing: 3px;
+            color: white;
+        }
+
+        .c-btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .s-btn {
+            border-radius:  10px;
+            border: none;
+            
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 20pt;
+            padding: 10px;
+        }
+        .btn1 {
+            background-color: #91d7f1;
+        }
+        .btn2 {
+            background-color: #b3d6aa;
+        }
+        .btn3 {
+            background-color: #d8a0ae;
+        }
+        .btn1, .btn2, .btn3 {
+            color: white;
+        }
+    </style>
+    <title>Cronometro</title>
+</head>
+
+<body>
+    <form name="formMain">
+        <div class=" c-main">
+            <h1 class="name-c" style="font-size: 50pt; color: white;"> Cronômetro </h1>
+        </div>
+        <div class="c-main">
+            <p class="c-font"><span id="hour">00</span>:</p>
+            <p class="c-font"><span id="minute">00</span>:</p>
+            <p class="c-font"><span id="second">00</span>:</p>
+            <p class="c-font"><span id="millisecond">000</span></p>
+        </div>
+        <div class="c-btn">
+            <button class="s-btn btn1" type="button" name="start">start</button>
+            <button class="s-btn btn2" type="button" name="pause">pause</button>
+            <button class="s-btn btn3" type="button" name="reset">reset</button>
+        </div>
+
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>
