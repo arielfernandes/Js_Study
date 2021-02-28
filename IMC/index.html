@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+    <title>BMI</title>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <div class="container formIMC" style="max-width: 300px; margin-top: 70px;">
+        <div class="mb-3">
+            <label class="form-label">Weigth</label>
+            <input type="number" class="form-control" id="inputWeigth">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Height</label>
+            <input type="number" class="form-control" id="inputHeight">
+        </div>
+        <button type="button" class="btn btn-primary" id="send" name="send" onclick="calc()">Send</button>
+    </div>
+    <div class="result d-flex justify-content-center m-5">
+        <p></p>
+    </div>
+</body>
+
+</html>''
